@@ -13,59 +13,76 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ultimate_Quizz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVI-9R-wfF">
-                                <rect key="frame" x="147" y="314" width="80" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="21"/>
-                                <state key="normal" title="Começar"/>
-                                <connections>
-                                    <segue destination="ffH-TR-N0u" kind="show" id="h91-2t-HUM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bH-7m-KlR">
-                                <rect key="frame" x="111" y="373" width="153" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="21"/>
-                                <state key="normal" title="Adicionar Quizzes"/>
-                                <connections>
-                                    <segue destination="zwF-Ak-P4N" kind="show" id="hZz-gj-Hrg"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quizz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXt-ep-fCy">
-                                <rect key="frame" x="95" y="143" width="184" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMm-W0-Njr">
-                                <rect key="frame" x="144" y="617" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
-                                <state key="normal" title="Sobre o app"/>
-                                <connections>
-                                    <segue destination="1ER-8L-gSN" kind="show" identifier="goToAbout" id="Ben-iV-zve"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quizz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xca-j8-Ct0">
-                                <rect key="frame" x="95" y="143" width="184" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vtr-gr-Abr" userLabel="Title Stack View">
+                                <rect key="frame" x="147" y="114" width="81" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quizz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXt-ep-fCy">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Zlb-yn-RSX" userLabel="Start Stack View">
+                                <rect key="frame" x="111" y="305" width="153" height="97"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVI-9R-wfF">
+                                        <rect key="frame" x="36.5" y="0.0" width="80" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="21"/>
+                                        <state key="normal" title="Começar"/>
+                                        <connections>
+                                            <segue destination="ffH-TR-N0u" kind="show" id="h91-2t-HUM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bH-7m-KlR">
+                                        <rect key="frame" x="0.0" y="59" width="153" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="21"/>
+                                        <state key="normal" title="Adicionar Quizzes"/>
+                                        <connections>
+                                            <segue destination="zwF-Ak-P4N" kind="show" id="hZz-gj-Hrg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="o2N-CK-NBl" userLabel="About Stack View">
+                                <rect key="frame" x="146" y="637" width="83" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMm-W0-Njr">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
+                                        <state key="normal" title="Sobre o app"/>
+                                        <connections>
+                                            <segue destination="1ER-8L-gSN" kind="show" identifier="goToAbout" id="Ben-iV-zve"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vtr-gr-Abr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="5a6-ru-ywD"/>
+                            <constraint firstItem="Zlb-yn-RSX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="241" id="6a8-XS-8J8"/>
+                            <constraint firstItem="o2N-CK-NBl" firstAttribute="top" secondItem="Zlb-yn-RSX" secondAttribute="bottom" constant="235" id="6on-fb-8dd"/>
+                            <constraint firstItem="Zlb-yn-RSX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="CwQ-if-OBu"/>
+                            <constraint firstItem="o2N-CK-NBl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="Dez-Jh-ssS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zlb-yn-RSX" secondAttribute="trailing" constant="111" id="FPF-bu-rOD"/>
+                            <constraint firstItem="vtr-gr-Abr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="GoR-Fp-Y0O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o2N-CK-NBl" secondAttribute="bottom" id="SsI-2z-r88"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vtr-gr-Abr" secondAttribute="trailing" constant="147" id="Xym-Bh-1kg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o2N-CK-NBl" secondAttribute="trailing" constant="146" id="k4Z-HB-wX9"/>
+                            <constraint firstItem="o2N-CK-NBl" firstAttribute="top" secondItem="vtr-gr-Abr" secondAttribute="bottom" constant="481" id="nus-76-uea"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="aa9-VM-lMA"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1176.8" y="133.5832083958021"/>
         </scene>
